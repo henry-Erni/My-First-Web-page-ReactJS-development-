@@ -22,7 +22,7 @@ namespace quiz_app.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("quiz_app.Entities.Quizzes", b =>
+            modelBuilder.Entity("quiz_app.Entities.Quiz", b =>
                 {
                     b.Property<Guid>("QuizId")
                         .ValueGeneratedOnAdd()
@@ -42,21 +42,26 @@ namespace quiz_app.Migrations
                     b.Property<DateTime>("UpdatedAt")
                         .HasColumnType("datetime2");
 
+                    b.Property<Guid>("UserId")
+                        .HasColumnType("uniqueidentifier");
+
                     b.HasKey("QuizId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Quizzes");
                 });
 
-            modelBuilder.Entity("quiz_app.Entities.Users", b =>
+            modelBuilder.Entity("quiz_app.Entities.User", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<Guid>("UserId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("HashedPassword")
+                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
@@ -67,9 +72,25 @@ namespace quiz_app.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("UserId");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("quiz_app.Entities.Quiz", b =>
+                {
+                    b.HasOne("quiz_app.Entities.User", "User")
+                        .WithMany("Quizzes")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("quiz_app.Entities.User", b =>
+                {
+                    b.Navigation("Quizzes");
                 });
 #pragma warning restore 612, 618
         }

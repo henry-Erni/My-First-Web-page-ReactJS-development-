@@ -2,7 +2,7 @@
 
 namespace quiz_app.Entities
 {
-    public class Quizzes
+    public class Quiz
     {
         [Key]
         public Guid QuizId { get; set; }
@@ -14,5 +14,8 @@ namespace quiz_app.Entities
         public DateTime CreatedAt { get; set; }
 
         public DateTime UpdatedAt { get; set; }
+
+        public Guid UserId { get; set; }
+        public required User User { get; set; }
     }
 }

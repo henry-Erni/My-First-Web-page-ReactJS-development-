@@ -3,32 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|c:\\users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|solutionrelative:quiz-app\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|c:\\users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|solutionrelative:quiz-app\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|c:\\users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\controllers\\quizzescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|solutionrelative:quiz-app\\controllers\\quizzescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|c:\\users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|solutionrelative:quiz-app\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|c:\\users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|solutionrelative:quiz-app\\entities\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|c:\\users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\quiz-app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|solutionrelative:quiz-app\\quiz-app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|c:\\users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|solutionrelative:quiz-app\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|c:\\users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|solutionrelative:quiz-app\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|c:\\users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|solutionrelative:quiz-app\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|c:\\users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|solutionrelative:quiz-app\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|c:\\users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\dto\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|solutionrelative:quiz-app\\dto\\userresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|c:\\users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|solutionrelative:quiz-app\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|c:\\users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\entities\\quizzes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|solutionrelative:quiz-app\\entities\\quizzes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|c:\\users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|solutionrelative:quiz-app\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|c:\\users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\quiz-app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|solutionrelative:quiz-app\\quiz-app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|c:\\users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\data\\quizdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|solutionrelative:quiz-app\\data\\quizdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Migrations\\20250214030226_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:quiz-app\\Migrations\\20250214030226_Initial.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|c:\\users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\entities\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5B34C28E-DABB-431F-A02E-FEE3F14547B0}|quiz-app\\quiz-app.csproj|solutionrelative:quiz-app\\entities\\quiz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,93 +62,176 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Quizzes.cs",
-              "DocumentMoniker": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Entities\\Quizzes.cs",
-              "RelativeDocumentMoniker": "quiz-app\\Entities\\Quizzes.cs",
-              "ToolTip": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Entities\\Quizzes.cs",
-              "RelativeToolTip": "quiz-app\\Entities\\Quizzes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\appsettings.json",
+              "RelativeDocumentMoniker": "quiz-app\\appsettings.json",
+              "ToolTip": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\appsettings.json",
+              "RelativeToolTip": "quiz-app\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-14T08:34:02.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "quiz-app\\Mapping\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "quiz-app\\Mapping\\MappingProfile.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAmwA0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T03:45:26.702Z"
+              "WhenOpened": "2025-02-14T03:52:46.373Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UserDTO.cs",
-              "DocumentMoniker": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\DTO\\UserDTO.cs",
-              "RelativeDocumentMoniker": "quiz-app\\DTO\\UserDTO.cs",
-              "ToolTip": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\DTO\\UserDTO.cs",
-              "RelativeToolTip": "quiz-app\\DTO\\UserDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "quiz-app\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "quiz-app\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAmwCcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T03:50:46.872Z"
+              "WhenOpened": "2025-02-14T03:26:27.821Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "QuizzesController.cs",
-              "DocumentMoniker": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Controllers\\QuizzesController.cs",
-              "RelativeDocumentMoniker": "quiz-app\\Controllers\\QuizzesController.cs",
-              "ToolTip": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Controllers\\QuizzesController.cs",
-              "RelativeToolTip": "quiz-app\\Controllers\\QuizzesController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAFIAAABXAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "quiz-app\\Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "quiz-app\\Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T03:46:02.23Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "quiz-app\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "quiz-app\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAUwGkAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T02:31:13.832Z",
+              "WhenOpened": "2025-02-14T03:22:46.165Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Users.cs",
-              "DocumentMoniker": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Entities\\Users.cs",
-              "RelativeDocumentMoniker": "quiz-app\\Entities\\Users.cs",
-              "ToolTip": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Entities\\Users.cs",
-              "RelativeToolTip": "quiz-app\\Entities\\Users.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAABAAAAAAAAAA==",
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "quiz-app\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "quiz-app\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAiwCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-13T02:29:37.84Z"
+              "WhenOpened": "2025-02-14T03:04:34.121Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 8,
+              "Title": "UserDTO.cs",
+              "DocumentMoniker": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\DTO\\UserDTO.cs",
+              "RelativeDocumentMoniker": "quiz-app\\DTO\\UserDTO.cs",
+              "ToolTip": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\DTO\\UserDTO.cs",
+              "RelativeToolTip": "quiz-app\\DTO\\UserDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T03:50:46.872Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "20250214030226_Initial.cs",
+              "DocumentMoniker": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Migrations\\20250214030226_Initial.cs",
+              "RelativeDocumentMoniker": "quiz-app\\Migrations\\20250214030226_Initial.cs",
+              "ToolTip": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Migrations\\20250214030226_Initial.cs",
+              "RelativeToolTip": "quiz-app\\Migrations\\20250214030226_Initial.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T03:02:27.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "QuizDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Data\\QuizDbContext.cs",
+              "RelativeDocumentMoniker": "quiz-app\\Data\\QuizDbContext.cs",
+              "ToolTip": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Data\\QuizDbContext.cs",
+              "RelativeToolTip": "quiz-app\\Data\\QuizDbContext.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAnwBgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T02:43:41.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\DTO\\UserResponseDTO.cs",
+              "RelativeDocumentMoniker": "quiz-app\\DTO\\UserResponseDTO.cs",
+              "ToolTip": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\DTO\\UserResponseDTO.cs",
+              "RelativeToolTip": "quiz-app\\DTO\\UserResponseDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-14T02:39:15.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Quiz.cs",
+              "DocumentMoniker": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Entities\\Quiz.cs",
+              "RelativeDocumentMoniker": "quiz-app\\Entities\\Quiz.cs",
+              "ToolTip": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Entities\\Quiz.cs",
+              "RelativeToolTip": "quiz-app\\Entities\\Quiz.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T03:45:26.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "quiz-app\\Entities\\User.cs",
+              "ToolTip": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Entities\\User.cs",
+              "RelativeToolTip": "quiz-app\\Entities\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-13T02:29:37.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Program.cs",
               "RelativeDocumentMoniker": "quiz-app\\Program.cs",
               "ToolTip": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\Program.cs",
               "RelativeToolTip": "quiz-app\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAcwEoAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-13T02:28:03.086Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "quiz-app.csproj",
               "DocumentMoniker": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\quiz-app.csproj",
               "RelativeDocumentMoniker": "quiz-app\\quiz-app.csproj",
               "ToolTip": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\quiz-app.csproj",
               "RelativeToolTip": "quiz-app\\quiz-app.csproj",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAwCIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAADwvyAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-02-13T02:26:41.049Z"
+              "WhenOpened": "2025-02-13T02:26:41.049Z",
+              "EditorCaption": ""
             }
           ]
         }

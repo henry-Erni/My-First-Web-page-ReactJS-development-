@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using quiz_app.Data;
-using quiz_app.Entities;
-using BCrypt.Net;
 using quiz_app.DTO;
+using quiz_app.Entities;
+using quiz_app.Repositories;
 
 namespace quiz_app.Controllers
 {
@@ -16,127 +17,53 @@ namespace quiz_app.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
-        private readonly QuizDbContext _context;
+        private readonly IUserRepository _userRepository;
+        public readonly IMapper _mapper;
 
-        public UsersController(QuizDbContext context)
+        public UsersController(IUserRepository userRepository, IMapper mapper)
         {
-            _context = context;
+            _userRepository = userRepository;
+            _mapper = mapper;
         }
 
-        // GET: api/Users
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<Users>>> GetUsers()
+        //GET: api/Users/5
+        [HttpGet("{username}")]
+        public async Task<ActionResult<User>> GetUser(string username)
         {
-            return await _context.Users.ToListAsync();
-        }
-
-        // GET: api/Users/5
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Users>> GetUserById(Guid id)
-        {
-            var users = await _context.Users.FindAsync(id);
-
-            if (users == null)
-            {
-                return NotFound();
-            }
-
-            return users;
-        }
-
-        // PUT: api/Users/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPut("{id}")]
-        public async Task<IActionResult> PutUsers(Guid id, Users users)
-        {
-            if (id != users.Id)
-            {
-                return BadRequest();
-            }
-
-            _context.Entry(users).State = EntityState.Modified;
-
+           
             try
             {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!UsersExists(id))
-                {
-                    return NotFound();
-                }
-                else
-                {
-                    throw;
-                }
-            }
+                var user = await _userRepository.GetUserAsync(username);
 
-            return NoContent();
+                return user;
+            }
+            catch(InvalidOperationException ex)
+            {
+                return NotFound(new { message = ex.Message});
+            }
         }
 
         // POST: api/Users
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Users>> PostUsers(UserDTO users)
+        [HttpPost("register")]
+        public async Task<ActionResult<User>> RegisterUser([FromBody] UserDTO user)
         {
-            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(users.Password);
 
-            Users user = new()
+            try
             {
-                Username = users.Username,
-                HashedPassword = hashedPassword,
-                CreatedAt = DateTime.UtcNow,
-                UpdatedAt = DateTime.UtcNow
-            };
-            _context.Users.Add(user);
-            await _context.SaveChangesAsync();
+                var result = await _userRepository.RegisterUserAsync(user);
+                var response = _mapper.Map<UserResponseDTO>(result);
 
-            return CreatedAtAction("GetUsers", new { id = user.Id }, user);
-        }
-
-        // POST: api/Users/login
-        [HttpPost("login")]
-        public async Task<ActionResult<string>> Login([FromBody] UserDTO users)
-        {
-         
-            var user = await _context.Users.SingleOrDefaultAsync(u => u.Username == users.Username);
-            if (user == null)
+                return Ok(response);
+            } 
+            catch(InvalidOperationException ex)
             {
-                return Unauthorized("Invalid username or password.");
+                return Conflict( new { message = ex.Message });
             }
-
-           
-            bool isPasswordValid = BCrypt.Net.BCrypt.Verify(users.Password, user.HashedPassword);
-            if (isPasswordValid)
+            catch(Exception)
             {
-                return Ok(new { Login = "Login Sucessful"});
+                return StatusCode(500, new { message = "An unexpected error occured" });
             }
-            else
-            {
-                return Unauthorized(new { Unauthorized = "Invalid username or password." });
-            }
-        }
-
-        // DELETE: api/Users/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteUsers(Guid id)
-        {
-            var users = await _context.Users.FindAsync(id);
-            if (users == null)
-            {
-                return NotFound();
-            }
-
-            _context.Users.Remove(users);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
-        }
-
-        private bool UsersExists(Guid id)
-        {
-            return _context.Users.Any(e => e.Id == id);
+            
         }
     }
 }
