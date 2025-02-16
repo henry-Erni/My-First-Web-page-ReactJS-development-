@@ -8,5 +8,7 @@ namespace quiz_app.Repositories
         Task<User> RegisterUserAsync(UserDTO data);
 
         Task<User> GetUserAsync(string username);
+
+        Task<(User user, string token)> LoginAsync(UserDTO data);
     }
 }

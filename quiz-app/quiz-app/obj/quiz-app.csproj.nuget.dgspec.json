@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\quiz-app.csproj": {}
+    "C:\\Users\\Henry Arpon\\source\\repos\\My-First-Web-page-ReactJS-development-\\quiz-app\\quiz-app\\quiz-app.csproj": {}
   },
   "projects": {
-    "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\quiz-app.csproj": {
+    "C:\\Users\\Henry Arpon\\source\\repos\\My-First-Web-page-ReactJS-development-\\quiz-app\\quiz-app\\quiz-app.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\quiz-app.csproj",
+        "projectUniqueName": "C:\\Users\\Henry Arpon\\source\\repos\\My-First-Web-page-ReactJS-development-\\quiz-app\\quiz-app\\quiz-app.csproj",
         "projectName": "quiz-app",
-        "projectPath": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\quiz-app.csproj",
-        "packagesPath": "C:\\Users\\extarhe\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\extarhe\\source\\repos\\react-js-quiz-app\\quiz-app\\quiz-app\\obj\\",
+        "projectPath": "C:\\Users\\Henry Arpon\\source\\repos\\My-First-Web-page-ReactJS-development-\\quiz-app\\quiz-app\\quiz-app.csproj",
+        "packagesPath": "C:\\Users\\Henry Arpon\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Henry Arpon\\source\\repos\\My-First-Web-page-ReactJS-development-\\quiz-app\\quiz-app\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\extarhe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Henry Arpon\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

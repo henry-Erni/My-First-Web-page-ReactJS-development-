@@ -15,6 +15,8 @@ namespace quiz_app.Entities
 
         public DateTime UpdatedAt { get; set; }
 
-        public ICollection<Quiz>? Quizzes { get; set; }
+        public ICollection<QuizRecord>? QuizRecords { get; set; }
     }
 }
+
+

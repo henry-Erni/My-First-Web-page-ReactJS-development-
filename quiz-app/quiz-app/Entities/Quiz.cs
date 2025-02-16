@@ -15,7 +15,7 @@ namespace quiz_app.Entities
 
         public DateTime UpdatedAt { get; set; }
 
-        public Guid UserId { get; set; }
-        public required User User { get; set; }
+        public Guid QuizRecordId { get; set; }
+        public required QuizRecord QuizRecord { get; set; }
     }
 }

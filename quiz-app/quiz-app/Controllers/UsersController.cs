@@ -26,7 +26,7 @@ namespace quiz_app.Controllers
             _mapper = mapper;
         }
 
-        //GET: api/Users/5
+        //GET: api/Users/{username}
         [HttpGet("{username}")]
         public async Task<ActionResult<User>> GetUser(string username)
         {
@@ -34,8 +34,9 @@ namespace quiz_app.Controllers
             try
             {
                 var user = await _userRepository.GetUserAsync(username);
+                var result = _mapper.Map<UserResponseDTO>(user);
 
-                return user;
+                return Ok(result);
             }
             catch(InvalidOperationException ex)
             {
@@ -43,7 +44,7 @@ namespace quiz_app.Controllers
             }
         }
 
-        // POST: api/Users
+        // POST: api/Users/register
         [HttpPost("register")]
         public async Task<ActionResult<User>> RegisterUser([FromBody] UserDTO user)
         {
@@ -63,7 +64,21 @@ namespace quiz_app.Controllers
             {
                 return StatusCode(500, new { message = "An unexpected error occured" });
             }
-            
+        }
+
+        [HttpPost("login")]
+        public async Task<ActionResult<User>> Login(UserDTO data)
+        {
+            var (user, token ) = await _userRepository.LoginAsync(data);
+
+            var result = new AuthResponseDTO
+            {
+                UserId = user.UserId,
+                Username = user.Username,
+                Token = token
+            };
+
+            return Ok(result);
         }
     }
 }

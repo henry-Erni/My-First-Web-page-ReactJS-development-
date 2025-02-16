@@ -1,14 +1,14 @@
 import { BrowserRouter, Routes, Route} from "react-router-dom";
-import QuizPage from "./pages/QuizPage.jsx";
-import Login from "./pages/Login.jsx";
+import Home from "./pages/Home.jsx";
+import AuthPage from "./pages/AuthPage.jsx";
 
 
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<Login />}/>
-				<Route path="quiz" element={<QuizPage />}/>
+				<Route path="/" element={<AuthPage />}/>
+				<Route path="home" element={<Home />}/>
 			</Routes>
 		</BrowserRouter>
 	)

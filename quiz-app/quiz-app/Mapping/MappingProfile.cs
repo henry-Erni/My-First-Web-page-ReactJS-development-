@@ -11,6 +11,7 @@ namespace quiz_app.Mapping
             CreateMap<User, UserResponseDTO>();
             CreateMap<UserDTO, User>();
             CreateMap<User, UserDTO>();
+            CreateMap<User, AuthResponseDTO>();
         }
     }
 }

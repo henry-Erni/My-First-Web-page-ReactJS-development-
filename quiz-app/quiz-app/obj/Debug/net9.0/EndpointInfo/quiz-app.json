@@ -91,6 +91,54 @@
           }
         }
       }
+    },
+    "/api/Users/login": {
+      "post": {
+        "tags": [
+          "Users"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UserDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/User"
+                }
+              }
+            }
+          }
+        }
+      }
     }
   },
   "components": {
@@ -99,7 +147,7 @@
         "required": [
           "answer",
           "question",
-          "user"
+          "quizRecord"
         ],
         "type": "object",
         "properties": {
@@ -122,6 +170,47 @@
           "updatedAt": {
             "type": "string",
             "format": "date-time"
+          },
+          "quizRecordId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "quizRecord": {
+            "$ref": "#/components/schemas/QuizRecord"
+          }
+        },
+        "additionalProperties": false
+      },
+      "QuizRecord": {
+        "required": [
+          "quizRecordName",
+          "quizzes",
+          "user"
+        ],
+        "type": "object",
+        "properties": {
+          "quizRecordId": {
+            "type": "string",
+            "format": "uuid"
+          },
+          "quizRecordName": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "lastUpdatedAt": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "quizzes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Quiz"
+            },
+            "nullable": true
           },
           "userId": {
             "type": "string",
@@ -160,10 +249,10 @@
             "type": "string",
             "format": "date-time"
           },
-          "quizzes": {
+          "quizRecords": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Quiz"
+              "$ref": "#/components/schemas/QuizRecord"
             },
             "nullable": true
           }
