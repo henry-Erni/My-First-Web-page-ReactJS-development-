@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navigation from "../components/Navigation";
-import AuthForm from "../components/AuthForm";
+
+import AuthForm from "../forms/AuthForm";
 
 const AuthPage = () => {
     const [isLogin, setIsLogin] = useState(true);

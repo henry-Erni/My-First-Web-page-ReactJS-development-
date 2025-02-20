@@ -1,5 +1,6 @@
 import { useState } from "react";
 import reactLogo from "../assets/react.svg";
+import NavButton from "./NavButton";
 
 const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,26 +16,15 @@ const Navigation = () => {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-            Login
-          </button>
+            <NavButton />
+        </div>
+            {/* Mobile Menu Button */}
+            <button className="md:hidden text-white focus:outline-none" onClick={() => setIsOpen(!isOpen)} > ☰ </button>
         </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          className="md:hidden text-white focus:outline-none"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          ☰
-        </button>
-      </div>
-
-      {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="md:hidden flex flex-col items-center mt-2">
-          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">
-            Login
-          </button>
+            <NavButton />
         </div>
       )}
     </nav>
