@@ -9,22 +9,16 @@ using Microsoft.EntityFrameworkCore;
 using quiz_app.Data;
 using quiz_app.DTO;
 using quiz_app.Entities;
-using quiz_app.Repositories;
+using quiz_app.Repositories.UserInterface;
 
 namespace quiz_app.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UsersController : ControllerBase
+    public class UsersController(IUserRepository userRepository, IMapper mapper) : ControllerBase
     {
-        private readonly IUserRepository _userRepository;
-        public readonly IMapper _mapper;
-
-        public UsersController(IUserRepository userRepository, IMapper mapper)
-        {
-            _userRepository = userRepository;
-            _mapper = mapper;
-        }
+        private readonly IUserRepository _userRepository = userRepository;
+        public readonly IMapper _mapper = mapper;
 
         //GET: api/Users/{username}
         [HttpGet("{username}")]
@@ -46,7 +40,7 @@ namespace quiz_app.Controllers
 
         // POST: api/Users/register
         [HttpPost("register")]
-        public async Task<ActionResult<User>> RegisterUser([FromBody] UserDTO user)
+        public async Task<ActionResult<User>> RegisterUser([FromBody] UserWithRoleDTO user)
         {
 
             try
@@ -69,16 +63,28 @@ namespace quiz_app.Controllers
         [HttpPost("login")]
         public async Task<ActionResult<User>> Login(UserDTO data)
         {
-            var (user, token ) = await _userRepository.LoginAsync(data);
-
-            var result = new AuthResponseDTO
+            try
             {
-                UserId = user.UserId,
-                Username = user.Username,
-                Token = token
-            };
+                var (user, token) = await _userRepository.LoginAsync(data);
 
-            return Ok(result);
+                var result = new AuthResponseDTO
+                {
+                    UserId = user.UserId,
+                    Username = user.Username,
+                    Token = token
+                };
+
+                return Ok(result);
+            }
+            catch(InvalidOperationException ex)
+            {
+                return Unauthorized(new { message = ex.Message });
+            }
+            catch(Exception)
+            {
+                return StatusCode(500, new { message = "An unexpected error occurred" });
+            }
+            
         }
     }
 }

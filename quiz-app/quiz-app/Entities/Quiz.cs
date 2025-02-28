@@ -9,7 +9,10 @@ namespace quiz_app.Entities
 
         public required string Question { get; set; }
 
-        public required string Answer { get; set; }
+        public required string[] Options { get; set; }
+        public int CorrectOption { get; set; }
+
+        public int Points { get; set; }
 
         public DateTime CreatedAt { get; set; }
 

@@ -2,8 +2,7 @@
 {
     public class QuizResponseDTO
     {
-        public required string Question { get; set; }
-        public required string Answer { get; set; }
-        public string? CreatedBy { get; set; }
+       public Guid QuizId { get; set; }
+
     }
 }

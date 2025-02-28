@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
+const token = localStorage.getItem('token');
 
 export const fetchQuizRecords = createAsyncThunk('quiz/fetchQuizRecords', async (userId) => {
     const response = await axios.get("https://localhost:7088/api/QuizRecords", {
@@ -11,14 +12,14 @@ export const fetchQuizRecords = createAsyncThunk('quiz/fetchQuizRecords', async 
 });
 
 export const addQuizRecord = createAsyncThunk('quiz/addQuizRecord', async (requestData) => {
-    const response = await axios.post("https://localhost:7088/api/QuizRecords/createrecord", requestData);
+    const response = await axios.post("https://localhost:7088/api/QuizRecords/createrecord", requestData, {headers: {Authorization: `Bearer ${token}`}}); 
     return response.data;
 });
 
 export const deleteQuizRecord = createAsyncThunk('quiz/deleteQuizRecord', async (recordId) => {
-        const response = await axios.delete("https://localhost:7088/api/QuizRecords",{params: {
-            recordId
-        }} );
+        const response = await axios.delete(`https://localhost:7088/api/QuizRecords/${recordId}`, {
+        headers: { Authorization: `Bearer ${token}` }
+    });
         return response.data;
 });
 

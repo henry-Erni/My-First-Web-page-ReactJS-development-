@@ -1,5 +1,99 @@
 [
   {
+    "ContainingType": "quiz_app.Controllers.QuizController",
+    "Method": "AddQuiz",
+    "RelativePath": "api/Quiz/addquiz",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "quiz_app.DTO.QuizDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "quiz_app.Entities.Quiz",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "quiz_app.Controllers.QuizRecordsController",
+    "Method": "GetQuizRecords",
+    "RelativePath": "api/QuizRecords",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[quiz_app.DTO.QuizRecordResponseDTO, quiz-app, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "quiz_app.Controllers.QuizRecordsController",
+    "Method": "DeleteQuizRecord",
+    "RelativePath": "api/QuizRecords/{recordId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "recordId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "quiz_app.Controllers.QuizRecordsController",
+    "Method": "CreateQuizRecord",
+    "RelativePath": "api/QuizRecords/createrecord",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "quiz_app.DTO.QuizRecordDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "quiz_app.Entities.QuizRecord",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "quiz_app.Controllers.UsersController",
     "Method": "GetUser",
     "RelativePath": "api/Users/{username}",
@@ -61,7 +155,7 @@
     "Parameters": [
       {
         "Name": "user",
-        "Type": "quiz_app.DTO.UserDTO",
+        "Type": "quiz_app.DTO.UserWithRoleDTO",
         "IsRequired": true
       }
     ],

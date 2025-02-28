@@ -11,6 +11,8 @@ namespace quiz_app.Entities
 
         public required string Password { get; set; }
 
+        public required string Role { get; set; }
+
         public DateTime CreatedAt { get; set; }
 
         public DateTime UpdatedAt { get; set; }
