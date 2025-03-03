@@ -45,4 +45,4 @@ Postman tests have been created for the restricted endpoints to confirm that the
 
 You can find the Postman documentation and testing details at the following link:
 
-[Postman Documentation](https://web.postman.co/documentation/41665085-bd1e1a35-6e1d-45c6-89df-7b5f81a88fbd/publish?workspaceId=c5b7d118-dc5e-4f9a-8380-69b59ac8879e)
+https://dev.azure.com/erniegh/ERNI-EPM-University/_backlogs/backlog/ERNI-EPM-University%20Team/Epics?workitem=166665 
